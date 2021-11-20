@@ -1,1 +1,283 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial Helvetica, sans-serif;
+    background: #1D4350;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #208128, #1D4350);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2ba73f, #008f6f);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 1px;
+    text-align: center;
+}
+
+.formulario {
+    background: #fff;
+    margin-top: 10px;
+    padding: 1px;
+}
+
+.logo {
+    margin: 0 3px;
+    text-align: center;
+}
+
+.logo img {
+    width: 300px;
+    margin: 0 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #2F4F4F;
+    font-size: 40px;
+    position: absolute;
+    top: 175px;
+    left: 630px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+span {
+    text-align: center;
+    color: #2F4F4F;
+    font-size: 40px;
+    position: absolute;
+    top: 200px;
+    left: 570px;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+input [type="text"],
+input [type="email"],
+input [type="password"] {
+    font-size: 20px;
+    border: none;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button {
+    border: none;
+    width: 45%;
+    color: white;
+    font-size: 15px;
+    background: #345eb9;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cadetblue;
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #eb2e2e;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue
+}
+
+@media(min-width: 768px) {
+    .formulario {
+        margin: auto;
+        width: 500px;
+        margin-top: 80px;
+        border-radius: 4%;
+        box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
+        display: block;
+    }
+}
+
+#container {
+    background: linear-gradient( to bottom, #bdba29, #111313);
+    width: 400px;
+    height: 735px;
+    margin: auto;
+}
+
+.cabeza {
+    margin: 0;
+}
+
+.cabeza li {
+    list-styLe: none;
+    float: left;
+    margin-top: 20px;
+}
+
+.cabeza li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.album {
+    text-aLign: center;
+    display: block;
+    width: 327px;
+    max-width: 327px;
+    margin-right: 5px;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.exi {
+    margin-Left: -15px;
+    font-size: 25px;
+}
+
+.opciones {
+    font-size: 20px;
+}
+
+.cabeza li:nth-child(3) {
+    margin-top: 25px;
+}
+
+#caratula {
+    clear: left;
+}
+
+#caratula img {
+    width: 350px;
+    margin-top: 40px;
+    margin-Left: 23px;
+    box-shadow: 2px 2px 10px #666;
+}
+
+#cancion {
+    margin-Left: 10px;
+    margin-top: 40px;
+}
+
+#cancion a {
+    text-decoration: none;
+    color: white;
+}
+
+#nombre {
+    width: 300px;
+    margin-Left: 26px;
+    float: left;
+    font-family: 'Segoe UI';
+}
+
+#nombre a:nth-child(1) {
+    font-weight: bold;
+    font-size: 22 px;
+}
+
+#nombre a:nth-child(2) {
+    font-size: 15px;
+}
+
+.favorito {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+#barra {
+    clear: left;
+    margin-top: 20px;
+    width: 345px;
+    height: 3px;
+    background-color: #B1ADAD;
+    margin-Left: 25px;
+    border-radius: 5px;
+}
+
+#progreso {
+    margin-top: 20px;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#barra p {
+    color: white;
+    margin-top: 5px;
+    font-family: Century Gothic;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pro {
+    width: 50px;
+    float: left;
+}
+
+.dur {
+    float: right;
+}
+
+#controles {
+    clear: left;
+    text-align: center;
+    margin-Left: 23px;
+    display: flex;
+    justify-content: center;
+    aLign-items: center;
+}
+
+#controles .min {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin-right: 35px;
+}
+
+#controles .max {
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    margin-right: 35px;
+}
+
+#dispositivos {
+    margin-Left: 25px;
+    margin-top: 15px;
+}
+
+#dispositivos a {
+    text-decoration: none;
+    color: #dcd7d7;
+    font-size: 20px;
+}
+
+#dispositivos a:nth-child(2) {
+    float: right;
+    margin-right: 35px;
+}
