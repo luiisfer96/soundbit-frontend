@@ -4,14 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { UserModule } from './user/user.module';
 
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ErrorPageComponent,
   ],
   imports: [
     BrowserModule,
-    UserModule
+    UserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
